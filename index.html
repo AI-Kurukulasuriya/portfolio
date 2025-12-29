@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashen | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>A.I Kurukulasuriya</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="video-bg">
+  <video autoplay muted loop>
+    <source src="background.mp4" type="video/mp4">
+  </video>
+</div>
+
+<section class="hero">  
+
+<div class="hero-image">
+    <img src="profile.jpg" alt="Profile Image">
+  </div>
+
+  <div class="hero-text">
+    <h1 class="hero-name">Ashen Imantha</h1>
+    <h3 class="hero-role">Diploma in Computer Science with AI</h3>
+    <p class="hero-desc">
+      Passionate web developer focused on building modern, responsive, and interactive websites using HTML, CSS, and JavaScript.
+    </p>
+  </div>
+
+
+</section>
+
+<section class="glass" id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>
+I am a Computer Science student with a strong interest in frontend web development and user interface design. I enjoy working on the visual and interactive aspects of websites, ensuring that users have an engaging and intuitive experience. Designing clean layouts, choosing suitable color schemes, and implementing responsive designs are areas I am particularly passionate about. I also focus on writing clean, efficient, and maintainable code, which helps improve the performance and scalability of web applications   </p>
+</section>
+
+<section class="skills-section" id="skills">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-card">
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>HTML</span><span>90%</span>
+      </div>
+      <div class="skill-bar"><div data-skill="90"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>CSS</span><span>85%</span>
+      </div>
+      <div class="skill-bar"><div data-skill="85"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>JavaScript</span><span>75%</span>
+      </div>
+      <div class="skill-bar"><div data-skill="75"></div></div>
+    </div>
+
+  </div>
+</section>
+
+<section class="projects-section" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3 id="modalTitle"></h3>
+<img id="modalImage" style="width:100%; border-radius:15px; margin:15px 0; display:none;">
+
+    <p id="modalText"></p>
+<p>.</p>
+  </div>
+</div>
+
+
+  <div class="projects-grid">
+
+    <div class="project-box">
+      <h4>Portfolio Website</h4>
+      <i><p >Personal responsive portfolio built using HTML, CSS, and JavaScript.</p></i>
+<div class="project-box" onclick="openModal(1)">...</div>
+
+    </div>
+
+    <div class="project-box" >
+      <h4>Movie Gallery</h4>
+      <i><p >Interactive movie gallery using CSS Grid and hover animations.</p></i>
+<div class="project-box" onclick="openModal(2)">...</div>
+
+    </div>
+
+    <div class="project-box">
+      <h4>Student Behavior Analyzer</h4>
+      <i><p  >Statistical analysis using RStudio with ANOVA, T-tests & Spearmen.</p></i>
+<div class="project-box" onclick="openModal(3)">...</div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <h2 class="section-title">Contact Me</h2>
+
+  <div class="contact-card">
+
+    <div class="contact-info">
+	<p><strong>Name:</strong> A I Kurukulasuriya</p>
+	<p><strong>contact:</strong> +94 77 881 0289</p>
+      <p><strong>Email:</strong> cunninghunter432@email.com</p>
+      <p><strong>Location:</strong> Sri Lanka</p>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="formMessage"></p>
+    </form>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+<footer>
+    <p>© 2025 Ashen | Portfolio</p>
+</footer>
+
+</body>
+</html>
