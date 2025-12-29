@@ -41,7 +41,7 @@ image.style.display = "block";
 
   if (id === 3) {
     title.textContent = "Student Behavior Analyzer";
-image.src = "research.jpg";
+image.src = "Research.jpg";
     text.textContent =
       "I conducted a research study to analyze how student behavior affects academic performance using statistical and scientific methods. The study involved applying techniques such as ANOVA, T-tests, and Spearman correlation to examine relationships between various behavioral factors and academic results. Data analysis was performed systematically to identify meaningful patterns and trends. This project enhanced my analytical thinking, research skills, and understanding of how data-driven approaches can be used to draw valid conclusions in real-world academic scenarios.";
   }
@@ -52,3 +52,4 @@ image.src = "research.jpg";
 function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
+
